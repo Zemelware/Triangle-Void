@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4161545541422112302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4161545541422112303}
+  - component: {fileID: 4161545541422112306}
+  - component: {fileID: 4161545541422112304}
+  - component: {fileID: 4161545541422112307}
+  - component: {fileID: 2390257676858455592}
+  - component: {fileID: 337077503172396014}
+  - component: {fileID: 4161545541422112305}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4161545541422112303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4161545541422112302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4161545541422112306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4161545541422112302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5352918b012833a47b7b58e62052388b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovement: {fileID: 0}
+  gun: {fileID: 0}
+  enemyMovement: {fileID: 5734227735590194397, guid: 24487422521f91c438958037e2a62759,
+    type: 3}
+  spawnEnemies: {fileID: 4161545541422112304}
+  gameOverScreen: {fileID: 0}
+  pauseScreen: {fileID: 0}
+  hitEnemy: {fileID: 5734227735590194398, guid: 24487422521f91c438958037e2a62759,
+    type: 3}
+  menuScreen: {fileID: 0}
+  skinsScreen: {fileID: 0}
+  optionsScreen: {fileID: 0}
+  buyCoinsScreen: {fileID: 0}
+  gameOver: 0
+--- !u!114 &4161545541422112304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4161545541422112302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20276b95f137f1143ad719c0f01ef451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 5734227735590194392, guid: 24487422521f91c438958037e2a62759, type: 3}
+  enemySpawnRate: 5
+--- !u!114 &4161545541422112307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4161545541422112302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3338f37bfc462d46b0504c25939a715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerupSpawnRateMax: 60
+  powerupSpawnRateMin: 30
+  powerup: {fileID: 1090974867790463243, guid: d58d9b3286167e44085df48c918a172f, type: 3}
+  hitEnemy: {fileID: 5734227735590194398, guid: 24487422521f91c438958037e2a62759,
+    type: 3}
+--- !u!114 &2390257676858455592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4161545541422112302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a92de8585421642b68dab86730eee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinSpawnRateMax: 15
+  coinSpawnRateMin: 3
+  coin: {fileID: 399151175883545656, guid: 39defaa90a0267840947b9530084fd6f, type: 3}
+--- !u!114 &337077503172396014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4161545541422112302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ca5655c2c58624e87379b28236ff2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heartSpawnRateMax: 90
+  heartSpawnRateMin: 45
+  heart: {fileID: 5222858585750762360, guid: a70afca1c9f05484d999ca755b6fa7f9, type: 3}
+--- !u!114 &4161545541422112305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4161545541422112302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500839cb6ab7b044099e3371459c7066, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEnemyScript: {fileID: 5734227735590194398, guid: 24487422521f91c438958037e2a62759,
+    type: 3}
+  spawnEnemiesScript: {fileID: 4161545541422112304}
+  gunScript: {fileID: 0}
+  spawnPowerup: {fileID: 4161545541422112307}
+  spawnHeart: {fileID: 337077503172396014}
+  score: 0
+  highScore: 0
+  counter: 1
